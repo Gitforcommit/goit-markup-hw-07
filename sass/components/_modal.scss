@@ -1,0 +1,209 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-textarea:hover {
+  border-color: var(--color-for-buttons);
+}
+
+.checkbox:checked + .checkbox-text:before {
+  background-image: url(../images/agree.svg);
+  background-color: var(--color-for-buttons);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color-for-buttons);
+}
+
+.checkbox-text:before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 25%;
+  margin-right: 8px;
+}
+
+.checkbox-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-input {
+  display: flex;
+  align-items: center;
+  width: 448px;
+  position: relative;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 12px 35px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:nth-last-child() {
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--color-for-buttons);
+  outline: none;
+}
+
+.modal-input:hover + .modal-svg {
+  fill: #188ce8;
+}
+
+.modal-input:hover,
+.modal-input:focus + .modal-svg {
+  fill: #188ce8;
+}
+
+.modal-icon {
+  position: relative;
+}
+
+.modal-svg {
+  position: absolute;
+  fill: black;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  outline: none;
+  border-color: var(--color-for-buttons);
+}
+
+.agreement-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--color-for-buttons);
+}
+
+.input-name {
+  margin-left: 40px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(101%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+}

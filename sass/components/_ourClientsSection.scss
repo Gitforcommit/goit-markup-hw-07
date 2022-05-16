@@ -1,0 +1,47 @@
+.company-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.company-link {
+  border: 1px solid #afb1b8;
+  text-align: center;
+  fill: #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-property: fill, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list-items {
+  margin-left: 30px;
+}
+
+.clients-list-items:first-child {
+  margin-left: 0px;
+}
+
+.company-link:hover {
+  border: 1px solid #2196f3;
+  fill: var(--color-for-buttons);
+}
+
+.clients {
+  font-weight: 700;
+  color: var(--main-text-color);
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}

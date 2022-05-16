@@ -1,0 +1,139 @@
+.adress {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0px 60px 0px;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.adress a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-footer {
+  box-sizing: border-box;
+  display: block;
+  margin-left: 70px;
+}
+
+.footer-social-links {
+  display: flex;
+  list-style: none;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-link-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-footer:hover {
+  background-color: var(--color-for-buttons);
+  color: white;
+}
+
+.footer-links {
+  margin-right: 10px;
+}
+
+.footer-links:last-child {
+  margin-right: 0px;
+}
+
+.input-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.input-content {
+  display: flex;
+}
+
+.email-input {
+  min-width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  display: flex;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-email-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.email-svg {
+  margin-left: 10px;
+}
