@@ -1,40 +1,40 @@
-.main-nav {
+.header__nav {
   margin-left: 93px;
   display: flex;
   align-items: center;
 }
 
-.site-nav > .links {
-  margin-right: 50px;
-}
-
-.header-links:last-child {
-  margin-right: 0;
-}
-
-.link {
-  display: block;
-  padding: 32px 0px 32px 0px;
-  position: relative;
-}
-
-.mail-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.phone-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-.site-nav {
+.header__menu {
   display: flex;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.site-nav .link {
+.header__menu {
+  margin-right: 50px;
+}
+
+.header__list {
+  margin-right: 50px;
+}
+
+.header__list:nth-child(3) {
+  margin-right: 0;
+}
+
+.header__link {
+  display: block;
+  padding: 32px 0px 32px 0px;
+  position: relative;
+}
+
+.header__svg {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header__menu .header__link {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -46,11 +46,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header__menu .header__link:hover,
+.header__menu .header__link:focus {
   color: var(--color-for-buttons);
 }
-.site-nav .link.current {
+.header__menu .header__link.current {
   color: var(--color-for-buttons);
 }
 
@@ -66,7 +66,7 @@
 }
 
 /* contacts nav */
-.contacts-nav {
+.header__communications {
   list-style: none;
   display: flex;
   margin-left: auto;
@@ -74,15 +74,11 @@
   margin-bottom: 0px;
   align-items: center;
 }
-.contacts-nav .links + .links {
+.header__communications .header__list + .header__list {
   margin-left: 50px;
 }
 
-.links:nth-child(3) {
-  margin-right: 0;
-}
-
-.link-contacts {
+.header__contacts {
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
@@ -96,7 +92,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-contacts:focus,
-.link-contacts:hover {
+.header__contacts:focus,
+.header__contacts:hover {
   color: var(--color-for-buttons);
 }

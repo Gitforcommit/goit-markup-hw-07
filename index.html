@@ -18,30 +18,34 @@
     />
   </head>
   <body>
-    <header class="header-background">
-      <div class="header-content container">
+    <header class="header">
+      <div class="header__content container">
         <a href="./index.html" class="logo-link">
           <span class="logo-part">Web</span><span class="logo">Studio</span>
         </a>
-        <nav class="main-nav">
-          <ul class="site-nav">
-            <li class="links"><a href="./index.html" class="link current">Студия</a></li>
-            <li class="links"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="links"><a href="" class="link">Контакты</a></li>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__list">
+              <a href="./index.html" class="header__link current">Студия</a>
+            </li>
+            <li class="header__list">
+              <a href="./portfolio.html" class="header__link">Портфолио</a>
+            </li>
+            <li class="header__list"><a href="" class="header__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts-nav">
-          <li class="links">
-            <a href="mailto:info@devstudio.com" class="link-contacts">
-              <svg class="mail-icon" width="16px" height="12px">
+        <ul class="header__communications">
+          <li class="header__list">
+            <a href="mailto:info@devstudio.com" class="header__contacts">
+              <svg class="header__svg" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="links">
-            <a href="tel:+380961111111" class="link-contacts"
-              ><svg class="phone-icon" width="10px" height="16px">
+          <li class="header_list">
+            <a href="tel:+380961111111" class="header__contacts"
+              ><svg class="header__svg" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -52,79 +56,77 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-container">
-          <h1 class="hero-title">
+        <div class="hero-secion__container">
+          <h1 class="hero-secion__title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button " class="button cursor">
-            <span class="button-text" data-modal-open>Заказать услугу</span>
-          </button>
+          <button type="button" class="button cursor" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="sections">
-        <div class="container">
-          <ul class="about-list">
-            <li class="box">
-              <div class="svg-background">
+        <div class="benefits-container">
+          <ul class="benefits-container__list">
+            <li class="benefits-container__element">
+              <div class="benefits-container__svg">
                 <svg width="70px" height="70px">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="about-title">Внимание к деталям</h3>
-              <p class="about-description">
+              <h3 class="benefits-container__title">Внимание к деталям</h3>
+              <p class="benefits-container__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="box">
-              <div class="svg-background">
+            <li class="benefits-container__element">
+              <div class="benefits-container__svg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="about-title">Пунктуальность</h3>
-              <p class="about-description">
+              <h3 class="benefits-container__title">Пунктуальность</h3>
+              <p class="benefits-container__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="box">
-              <div class="svg-background">
+            <li class="benefits-container__element">
+              <div class="benefits-container__svg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="about-title">Планирование</h3>
-              <p class="about-description">
+              <h3 class="benefits-container__title">Планирование</h3>
+              <p class="benefits-container__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="box">
-              <div class="svg-background">
+            <li class="benefits-container__element">
+              <div class="benefits-container__svg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="about-title">Современные технологии</h3>
-              <p class="about-description">
+              <h3 class="benefits-container__title">Современные технологии</h3>
+              <p class="benefits-container__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-about-us">
-        <div class="container">
-          <h2 class="our-projects">Чем мы занимаемся</h2>
-          <ul class="projects-list">
-            <li class="projects-pic">
-              <div class="thumb-position">
-                <p class="background-thumb">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+      <section class="directions-section">
+        <div class="directions-container">
+          <h2 class="directions-container__heading">Чем мы занимаемся</h2>
+          <ul class="directions-container__list">
+            <li class="directions-container__item">
+              <div class="directions-description">
+                <p class="directions-description__text">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img width="370" src="./images/sectionaboutus1.jpg" alt="работник набирает код" />
               </div>
             </li>
-            <li class="projects-pic">
-              <div class="thumb-position">
-                <p class="background-thumb">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+            <li class="directions-container__item">
+              <div class="directions-description">
+                <p class="directions-description__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img
                   width="370"
                   src="./images/sectionaboutus2.jpg"
@@ -132,27 +134,21 @@
                 />
               </div>
             </li>
-            <li class="projects-pic">
-              <div class="thumb-position">
-                <p class="background-thumb">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+            <li class="directions-container__item">
+              <div class="directions-description">
+                <p class="directions-description__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 <img width="370" src="./images/sectionaboutus3.jpg" alt="работник подбирает цвет" />
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-color">
-        <div class="our-team-container container">
-          <h2 class="team">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-card">
-              <img
-                width="270"
-                src="./images/staff.jpg"
-                alt="Игорь Демьяненко Product
-        Designer"
-                class="team-pic"
-              />
+      <section class="team-section">
+        <div class="team-container">
+          <h2 class="team-container__title">Наша команда</h2>
+          <ul class="team-container__list">
+            <li class="team-container__card">
+              <img width="270" src="./images/staff.jpg" alt="Игорь Демьяненко Product Designer" />
               <div class="team-description">
                 <h2 class="team-names">Ольга Репина</h2>
                 <p class="job-name">Product Designer</p>
@@ -188,14 +184,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img
-                width="270"
-                src="./images/staff1.jpg"
-                alt="Ольга Репина Frontend
-        Developer"
-                class="team-pic"
-              />
+            <li class="team-container__card">
+              <img width="270" src="./images/staff1.jpg" alt="Ольга Репина Frontend Developer" />
               <div class="team-description">
                 <h2 class="team-names">Игорь Демьяненко</h2>
                 <p class="job-name">Frontend Developer</p>
@@ -231,13 +221,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img
-                width="270"
-                src="./images/staff2.jpg"
-                alt="Николай Тарасов Marketing"
-                class="team-pic"
-              />
+            <li class="team-container__card">
+              <img width="270" src="./images/staff2.jpg" alt="Николай Тарасов Marketing" />
               <div class="team-description">
                 <h2 class="team-names">Николай Тарасов</h2>
                 <p class="job-name">Marketing</p>
@@ -273,13 +258,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card">
-              <img
-                width="270"
-                src="./images/staff3.jpg"
-                alt="Михаил Ермаков UI Designer"
-                class="team-pic"
-              />
+            <li class="team-container__card">
+              <img width="270" src="./images/staff3.jpg" alt="Михаил Ермаков UI Designer" />
               <div class="team-description">
                 <h2 class="team-names">Михаил Ермаков</h2>
                 <p class="job-name">UI Designer</p>
