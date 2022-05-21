@@ -1,9 +1,9 @@
-.header-background {
+.header {
   color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
-.header-content {
+.header__content {
   display: flex;
   align-items: center;
 }
@@ -526,7 +526,7 @@
 }
 
 body {
-  color: var(--main-text-color);
+  color: #212121;
   font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 

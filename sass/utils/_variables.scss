@@ -12,7 +12,7 @@ $cubicBeizer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  color: var(--main-text-color);
+  color: $mainColor;
   font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 }
 ul {

@@ -164,4 +164,8 @@
 .projects-pic:last-child {
   margin-right: 0;
 }
+
+.portfolio-list:hover .overlay-text {
+  transform: translateY(0%);
+}
 /*# sourceMappingURL=portfolio.css.map */
