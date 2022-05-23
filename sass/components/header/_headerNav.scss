@@ -4,23 +4,11 @@
   align-items: center;
 }
 
-.header__menu {
-  display: flex;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header__menu {
-  margin-right: 50px;
-}
-
 .header__list {
   margin-right: 50px;
-}
-
-.header__list:nth-child(3) {
-  margin-right: 0;
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 .header__link {
@@ -34,8 +22,13 @@
   margin-right: 10px;
 }
 
-.header__menu .header__link {
-  color: var(--main-text-color);
+.header__menu {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+  color: $mainColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 0.9;
@@ -43,15 +36,20 @@
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: $cubicBeizer;
 }
 
-.header__menu .header__link:hover,
-.header__menu .header__link:focus {
-  color: var(--color-for-buttons);
-}
-.header__menu .header__link.current {
-  color: var(--color-for-buttons);
+.header__link {
+  @extend .header__menu;
+  margin-right: 0;
+
+  .header__menu &:hover,
+  .header__menu &:focus {
+    color: $buttonsColor;
+  }
+  .header__menu &.current {
+    color: $buttonsColor;
+  }
 }
 
 .current::after {
@@ -59,7 +57,7 @@
   content: '';
   display: block;
   bottom: -1px;
-  background-color: var(--color-for-buttons);
+  background-color: $buttonsColor;
   border-radius: 2px;
   width: 100%;
   height: 4px;
@@ -73,13 +71,14 @@
   margin-top: 0px;
   margin-bottom: 0px;
   align-items: center;
-}
-.header__communications .header__list + .header__list {
-  margin-left: 50px;
+
+  & .header__list + .header__list {
+    margin-left: 50px;
+  }
 }
 
 .header__contacts {
-  color: var(--secondary-color);
+  color: $secondaryColor;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -89,10 +88,10 @@
   align-items: center;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition-timing-function: $cubicBeizer;
 
-.header__contacts:focus,
-.header__contacts:hover {
-  color: var(--color-for-buttons);
+  &:focus,
+  &:hover {
+    color: var(--color-for-buttons);
+  }
 }

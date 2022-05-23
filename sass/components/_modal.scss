@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   transition: opacity 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: $cubicBeizer;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -58,6 +58,19 @@
   align-items: center;
   justify-content: center;
   color: #757575;
+
+  &:hover {
+    border-color: $buttonsColor;
+  }
+
+  &:before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-text-color);
+    border-radius: 25%;
+    margin-right: 8px;
+  }
 }
 
 .agreement-field__checkbox {
@@ -69,37 +82,24 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
 
-.agreement-field__text:hover {
-  border-color: var(--color-for-buttons);
-}
-
-.agreement-field__checkbox:checked + .agreement-field__text:before {
-  background-image: url(../images/agree.svg);
-  background-color: var(--color-for-buttons);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--color-for-buttons);
+  &:checked + .agreement-field__text:before {
+    background-image: url(../images/agree.svg);
+    background-color: $buttonsColor;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $buttonsColor;
+  }
 }
 
 .agreement-field {
   margin-bottom: 10px;
 }
 
-.agreement-field__text:before {
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--main-text-color);
-  border-radius: 25%;
-  margin-right: 8px;
-}
-
 .agreement-field__link {
   text-decoration: underline;
   cursor: pointer;
-  color: var(--color-for-buttons);
+  color: $buttonsColor;
 }
 
 .checkbox-border {
@@ -121,22 +121,22 @@
   cursor: pointer;
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition-timing-function: $cubicBeizer;
 
-.modal__input:hover,
-.modal__input:focus {
-  border-color: var(--color-for-buttons);
-  outline: none;
-}
+  &:hover,
+  &:focus {
+    border-color: $buttonsColor;
+    outline: none;
 
-.modal__input:hover + .modal__svg {
-  fill: #188ce8;
-}
+    & + .modal__svg {
+      fill: #188ce8;
+    }
 
-.modal__input:hover,
-.modal__input:focus + .modal__svg {
-  fill: #188ce8;
+    &,
+    & + .modal__svg {
+      fill: #188ce8;
+    }
+  }
 }
 
 .modal__svg {
@@ -149,7 +149,7 @@
   align-items: center;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: $cubicBeizer;
 }
 
 .modal__textarea {
@@ -165,13 +165,13 @@
   cursor: pointer;
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition-timing-function: $cubicBeizer;
 
-.modal__textarea:hover,
-.modal__textarea:focus {
-  outline: none;
-  border-color: var(--color-for-buttons);
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--color-for-buttons);
+  }
 }
 
 .agreement-field__link {

@@ -1,13 +1,17 @@
-.logo {
-  color: var(--main-text-color);
-}
-
-.logo-part {
+.logo__part {
   color: #2196f3;
   margin-top: 60px;
 }
 
-.logo-link {
+.logo__part--reverse {
+  color: white;
+}
+
+.logo__part--color {
+  color: black;
+}
+
+.logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -15,7 +19,4 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: inline-block;
-}
-.logo-footer {
-  color: white;
 }

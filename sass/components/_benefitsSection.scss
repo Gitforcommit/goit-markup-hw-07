@@ -8,10 +8,10 @@
   max-width: 270px;
   justify-content: center;
   margin-right: auto;
-}
 
-.benefits-container__element:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .benefits-container__title {
@@ -26,7 +26,7 @@
 }
 
 .benefits-container__text {
-  color: var(--secondary-color);
+  color: $secondaryColor;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
