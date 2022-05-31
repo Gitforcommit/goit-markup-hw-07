@@ -1,9 +1,9 @@
 .directions-section {
   margin: 0px 0px 94px 0px;
+  display: none;
 }
 
 .directions-container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -21,9 +21,6 @@
 }
 
 .directions-container__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }

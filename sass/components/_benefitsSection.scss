@@ -1,17 +1,16 @@
 .benefits-container__list {
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .benefits-container__element {
   max-width: 270px;
-  justify-content: center;
   margin-right: auto;
+  margin-left: auto;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .benefits-container__title {
@@ -39,14 +38,11 @@
   text-align: center;
   width: 270px;
   height: 120px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 .benefits-container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
