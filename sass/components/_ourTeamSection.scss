@@ -4,7 +4,6 @@
 }
 
 .team-container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -22,10 +21,8 @@
 }
 
 .team-container__list {
-  display: flex;
   padding-left: 0;
   margin: 0;
-  justify-content: center;
 }
 
 .team-description__item {
@@ -37,20 +34,21 @@
 }
 
 .team-container__card {
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 270px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:first-child {
-    margin-left: 0;
-  }
+  // &:first-child {
+  //   margin-left: 0;
+  // }
 
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
 }
 
 .team-description {
@@ -75,19 +73,17 @@
 }
 
 .team-description__list {
-  display: flex;
   justify-content: center;
   margin: 15px 0px 0px 0px;
+  display: flex;
 }
 
 .team-description__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
   background-color: white;
   justify-content: center;
-  display: flex;
   color: #afb1b8;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
