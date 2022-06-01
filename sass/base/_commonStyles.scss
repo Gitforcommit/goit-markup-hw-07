@@ -28,6 +28,8 @@ h3 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -40,11 +42,13 @@ textarea {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .cursor {

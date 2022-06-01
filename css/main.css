@@ -409,12 +409,17 @@
   padding: 94px 0px 94px 0px;
 }
 
-.team-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-container {
+    max-width: 480px;
+  }
 }
 
 .team-container__title {
@@ -432,7 +437,7 @@
 }
 
 .team-description__item {
-  margin-right: 10px;
+  margin-right: 22px;
 }
 
 .team-description__item:nth-child(4n) {
@@ -440,12 +445,14 @@
 }
 
 .team-container__card {
-  margin-left: auto;
-  margin-right: auto;
-  width: 270px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
+.team-container__card:last-child {
+  margin-bottom: 0px;
 }
 
 .team-description {
@@ -463,6 +470,7 @@
 
 .team-description__job {
   color: var(--secondary-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -897,6 +905,8 @@ h3 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -909,11 +919,13 @@ textarea {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .cursor {
