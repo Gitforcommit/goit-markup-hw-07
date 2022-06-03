@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <header class="header">
+   <header class="header">
       <div class="header__content container">
         <a href="./index.html" class="logo">
           <span class="logo__part">Web</span
@@ -31,34 +31,116 @@
               <a href="./index.html" class="header__link">Студия</a>
             </li>
             <li class="header__list">
-              <a href="./portfolio.html" class="header__link current">Портфолио</a>
+              <a href="./portfolio.html" class="header__link  current">Портфолио</a>
             </li>
             <li class="header__list"><a href="" class="header__link">Контакты</a></li>
           </ul>
+          <ul class="header__communications">
+            <li class="header__item">
+              <a href="mailto:info@devstudio.com" class="header__contacts">
+                <svg class="header__svg" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="header__contacts"
+                ><svg class="header__svg" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="header__communications">
-          <li class="header__list">
-            <a href="mailto:info@devstudio.com" class="header__contacts">
-              <svg class="header__svg" width="16px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
+        <button
+          type="button"
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/menu-svgs.svg#icon-menu_open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__container container">
+          <div class="mobile-nav">
+            <button type="button" class="js-close-menu">
+              <svg width="40px" height="40px">
+                <use href="./images/menu-svgs.svg#icon-menu_close"></use>
               </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header_list">
-            <a href="tel:+380961111111" class="header__contacts"
-              ><svg class="header__svg" width="10px" height="16px">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            </button>
+            <ul class="mobile-nav__menu">
+              <li class="mobile-nav__list">
+                <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студия</a>
+              </li>
+              <li class="mobile-nav__list">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+              </li>
+              <li class="mobile-nav__list"><a href="" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mobile-contacts">
+            <ul>
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__nav" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+              </li>
+              <li>
+                <a
+                  class="mobile-contacts__nav mobile-contacts__nav--color"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-contacts__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-contacts__link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-contacts__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-contacts__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="main">
-        <div class="container">
+        <div class="portfolio-container container">
         <ul class="portfolio-buttons">
           <li class="buttons"><button type="button" class="button-portfolio cursor">Все</button></li>
           <li class="buttons"><button type="button" class="button-portfolio cursor">Веб-сайты</button></li>
@@ -70,7 +152,24 @@
           <li class="portfolio-list">
             <a href="">
             <div class="overlay">
-            <img width="370" src="./images/Portfolio.jpg" alt="изображение вебсайта" class="project-pic"/>
+              <picture>
+                <source
+                  srcset="./images/project-1-354.jpg 1x, ./images/project-1-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-1-370.jpg 1x, ./images/project-1-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-1-450.jpg 1x, ./images/project-1-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img width="100%" src="./images/Portfolio.jpg" alt="изображение вебсайта" class="project-pic"/>
+              </picture>
             <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Технокряр</h2>
@@ -80,7 +179,24 @@
           <li class="portfolio-list">
             <a href=""></a>
             <div class="overlay">
-              <img width="370" src="./images/Portfolio1.jpg" alt="постер" class="project-pic"/>
+              <picture>
+                <source
+                  srcset="./images/project-2-354.jpg 1x, ./images/project-2-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-2-370.jpg 1x, ./images/project-2-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-2-450.jpg 1x, ./images/project-2-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img width="100%" src="./images/Portfolio1.jpg" alt="постер" class="project-pic"/>
+              </picture>
               <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Постер New Orlean vs Golden Star</h2>
@@ -88,7 +204,25 @@
           </li>
           <li class="portfolio-list"> 
           <a href="">
-            <div class="overlay"> <img width="370" src="./images/Portfolio2.jpg" alt="лого ресторана" class="project-pic"/>
+            <div class="overlay"> 
+              <picture>
+                <source
+                  srcset="./images/project-3-354.jpg 1x, ./images/project-3-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-3-370.jpg 1x, ./images/project-3-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-3-450.jpg 1x, ./images/project-3-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img width="100%" src="./images/Portfolio2.jpg" alt="лого ресторана" class="project-pic"/>
+              </picture>
             <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Ресторан Seafood</h2>
@@ -96,7 +230,25 @@
           </li>
           <li class="portfolio-list">
             <a href="">
-           <div class="overlay"><img width="370" src="./images/porbtofio3.jpg" alt="наушники" class="project-pic"/>
+           <div class="overlay">
+             <picture>
+                <source
+                  srcset="./images/project-4-354.jpg 1x, ./images/project-4-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-4-370.jpg 1x, ./images/project-4-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-4-450.jpg 1x, ./images/project-4-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+             <img width="100%" src="./images/porbtofio3.jpg" alt="наушники" class="project-pic"/>
+             </picture>
               <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
             <div class="card-content"><h2 class="project-name">Проект Prime</h2>
@@ -105,7 +257,24 @@
           <li class="portfolio-list">
             <a href=""></a>
            <div class="overlay">
-              <img width="370" src="./images/portfolio4.jpg" alt="коробки" class="project-pic"/>
+             <picture>
+                <source
+                  srcset="./images/project-5-354.jpg 1x, ./images/project-5-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-5-370.jpg 1x, ./images/project-5-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-5-450.jpg 1x, ./images/project-5-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img width="100%" src="./images/portfolio4.jpg" alt="коробки" class="project-pic"/>
+             </picture>
              <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Проект Boxes</h2>
@@ -114,7 +283,24 @@
           <li class="portfolio-list">
             <a href="">
          <div class="overlay">  
-           <img width="370" src="./images/portfolio5.jpg" alt="вебсайт" class="project-pic"/>
+           <picture>
+                <source
+                  srcset="./images/project-6-354.jpg 1x, ./images/project-6-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-6-370.jpg 1x, ./images/project-6-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-6-450.jpg 1x, ./images/project-6-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+           <img width="100%" src="./images/portfolio5.jpg" alt="вебсайт" class="project-pic"/>
+           </picture>
           <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
           <div class="card-content"><h2 class="project-name">Inspiration has no Borders</h2>
@@ -123,7 +309,24 @@
           <li class="portfolio-list">
             <a href="">
          <div class="overlay">  
-              <img width="370" src="./images/portfolio6.jpg" alt="книга" class="project-pic" />
+           <picture>
+                <source
+                  srcset="./images/project-7-354.jpg 1x, ./images/project-7-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-7-370.jpg 1x, ./images/project-7-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-7-450.jpg 1x, ./images/project-7-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img width="100%" src="./images/portfolio6.jpg" alt="книга" class="project-pic" />
+           </picture>
       <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Издание Limited Edition</h2>
@@ -132,7 +335,24 @@
           <li class="portfolio-list">
             <a href=""></a>
           <div class="overlay">  
-              <img width="370" src="./images/portfolio7.jpg" alt="книга" class="project-pic"/>
+            <picture>
+                <source
+                  srcset="./images/project-8-354.jpg 1x, ./images/project-8-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-8-370.jpg 1x, ./images/project-8-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-8-450.jpg 1x, ./images/project-8-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img width="100%" src="./images/portfolio7.jpg" alt="книга" class="project-pic"/>
+            </picture>
     <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
               <div class="card-content"><h2 class="project-name">Проект LAB</h2>
@@ -140,7 +360,25 @@
           </li>
           <li class="portfolio-list">
             <a href="">
-           <div class="overlay"> <img width="370" src="./images/portfolio8.jpg" alt="книга" class="project-pic"/>
+           <div class="overlay"> 
+             <picture>
+                <source
+                  srcset="./images/project-9-354.jpg 1x, ./images/project-9-708.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-9-370.jpg 1x, ./images/project-9-740.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/project-9-450.jpg 1x, ./images/project-9-900.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+             <img width="100%" src="./images/portfolio8.jpg" alt="книга" class="project-pic"/>
+             </picture>
               <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
             <div class="card-content"><h2 class="project-name">Growing Buisness</h2>

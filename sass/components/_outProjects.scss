@@ -1,8 +1,13 @@
 .directions-section {
-  margin: 0px 0px 94px 0px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (max-width: 1199px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
@@ -24,6 +29,7 @@
 }
 
 .directions-container__list {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 }

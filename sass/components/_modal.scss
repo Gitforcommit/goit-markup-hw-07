@@ -23,6 +23,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__field {
@@ -58,6 +67,14 @@
   align-items: center;
   justify-content: center;
   color: #757575;
+
+  @media screen and (max-width: 1199px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 
   &:hover {
     border-color: $buttonsColor;
@@ -111,7 +128,7 @@
 .modal__input {
   display: flex;
   align-items: center;
-  width: 448px;
+  width: 100%;
   position: relative;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -153,7 +170,7 @@
 }
 
 .modal__textarea {
-  width: 448px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
