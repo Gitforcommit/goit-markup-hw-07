@@ -161,7 +161,6 @@
 }
 
 .benefits-container__title {
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -170,6 +169,12 @@
   list-style: none;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits-container__title {
+    text-align: center;
+  }
 }
 
 .benefits-container__text {
@@ -322,13 +327,18 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: white;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
   .footer-input__title {
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input__title {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -601,14 +611,6 @@
   }
 }
 
-.team-description__item {
-  margin-right: 22px;
-}
-
-.team-description__item:nth-child(4n) {
-  margin-right: 0px;
-}
-
 .team-container__card {
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -665,6 +667,8 @@
 .team-description__link {
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
   border-radius: 50%;
   background-color: white;
   justify-content: center;
@@ -680,8 +684,6 @@
 }
 
 .team-description__icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -781,6 +783,7 @@
 .directions-section {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1132,6 +1135,13 @@ textarea {
 .sections {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .sections {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container {
