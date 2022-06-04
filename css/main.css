@@ -1080,24 +1080,6 @@
   overflow: hidden;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transform: translateY(101%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
-}
-
 :root {
   --main-text-color: #212121;
   --secondary-color: #757575;
@@ -1294,10 +1276,14 @@ textarea {
   letter-spacing: 0.02em;
   color: #2196f3;
   margin-right: 10px;
+  margin-bottom: 32px;
 }
 
-.mobile-contacts__item {
-  margin-bottom: 32px;
+@media screen and (max-width: 480px) {
+  .mobile-contacts__link {
+    font-size: 14px;
+    line-height: 1.22;
+  }
 }
 
 .mobile-contacts__list {
