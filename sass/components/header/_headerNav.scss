@@ -1,6 +1,10 @@
 .header__nav {
   align-items: center;
   display: flex;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 45px;
+  }
 }
 
 .header__content {

@@ -38,7 +38,13 @@
   background-color: inherit;
   display: block;
   margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    fill: $buttonsColor;
+  }
 }
+
 .mobile-menu__container {
   display: flex;
   flex-direction: column;
