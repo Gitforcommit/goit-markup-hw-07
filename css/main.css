@@ -177,7 +177,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .benefits-container__title {
     text-align: center;
   }
@@ -361,7 +361,7 @@
 }
 
 .footer-input__line {
-  min-width: 358px;
+  min-width: 320px;
   height: 50px;
   padding-left: 16px;
   outline: none;
@@ -369,7 +369,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
-  color: rgba(255, 255, 255, 0.3);
+  color: palevioletred;
   margin-bottom: 20px;
 }
 
@@ -1289,7 +1289,7 @@ textarea {
 
 .mobile-contacts__nav {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -1308,7 +1308,6 @@ textarea {
   letter-spacing: 0.02em;
   color: #2196f3;
   margin-right: 10px;
-  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1326,5 +1325,9 @@ textarea {
 .mobile-contacts__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
+}
+
+.mobile-contacts__phone {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=main.css.map */
