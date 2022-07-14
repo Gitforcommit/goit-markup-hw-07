@@ -197,6 +197,10 @@
   }
 }
 
+.benefits-container__text:last-child {
+  margin-bottom: 0px;
+}
+
 .benefits-container__svg {
   display: flex;
   align-items: center;
@@ -228,6 +232,12 @@
 @media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container__items {
+    margin-bottom: 60px;
   }
 }
 
@@ -274,13 +284,17 @@
 .footer-social {
   box-sizing: border-box;
   display: block;
-  margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__list {
   list-style: none;
   display: flex;
-  margin-bottom: 60px;
 }
 
 .footer-social__title {
@@ -341,12 +355,6 @@
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-input__title {
-    margin-top: 60px;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .footer-input__title {
     margin-right: auto;
@@ -361,7 +369,7 @@
 }
 
 .footer-input__line {
-  min-width: 320px;
+  min-width: 450px;
   height: 50px;
   padding-left: 16px;
   outline: none;
@@ -501,6 +509,13 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -530,6 +545,12 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-container__title {
+    font-size: 36px;
+  }
 }
 
 .clients-container__list {
@@ -612,6 +633,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team-container {
     max-width: 480px;
@@ -625,6 +653,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .team-container__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 .team-container__list {
@@ -727,6 +762,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .button:hover, .button:focus {
@@ -817,12 +856,6 @@
 @media screen and (max-width: 1199px) {
   .directions-section {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .directions-section {
-    max-width: 1200px;
   }
 }
 
