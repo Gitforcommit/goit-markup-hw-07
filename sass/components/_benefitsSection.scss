@@ -24,6 +24,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .benefits-container__element:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .benefits-container__title {
   font-weight: 700;
   font-size: 14px;
@@ -45,13 +51,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   list-style: none;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-  &:last-child {
-    margin-bottom: 0px;
-  }
 }
 
 .benefits-container__svg {
